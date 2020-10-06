@@ -17,10 +17,12 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge=18;
-if(votingAge >= 18){
-  console.log(votingAge);
+const votingAge="20";
+
+if (votingAge >= 18 ){
+  console.log(true);
 }
+
 
 
 /*
@@ -33,12 +35,6 @@ Do the following:
 
    HINT: no function required
 */
-let bird=19;
-let turtle=20;
-
-if(turtle>=18){
- let bird=22;
-}
 
 
 
@@ -54,9 +50,6 @@ Do the following:
    HINT: look up the Number method
 */
 
-
-
-
 /*
 Task 1d - Multiply
  
@@ -65,11 +58,6 @@ Do the following:
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
