@@ -17,6 +17,11 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge=20;
+
+if (votingAge >= 18 ){
+  console.log(true);
+}
 
 
 
@@ -30,9 +35,13 @@ Do the following:
 
    HINT: no function required
 */
+let seb=28;
+let annie=20;
 
-
-
+if (annie>25){
+  let seb=33;
+  console.log(seb);
+}
 
 
 /*
@@ -45,10 +54,11 @@ Do the following:
 
    HINT: look up the Number method
 */
-
-
-
-
+let partyTime="1999"
+function stringToNumber(str){
+  return Number(str);
+}
+stringToNumber("1999");
 /*
 Task 1d - Multiply
  
@@ -57,13 +67,10 @@ Do the following:
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
-
-
+function multiply(a,b){
+  return a*b;
+}
+multiply(2,4);
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
@@ -74,10 +81,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+   return age*7;
 }
-
+dogYears(4);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -107,9 +114,33 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight,age){
+  let foodAmount=0;
+  if(age>=12 && weight<=5){
+    foodAmount=0.05*weight;
   }
+  else if(age >=12 && (weight>=5 && weight<=10)){
+    foodAmount=0.04*weight;
+  }
+  
+  else if(age>=12 && (weight>=11 && weight <= 15)){
+    foodAmount=0.03*weight;
+  }
+  else if(age>=12 && weight>=16){
+    foodAmount=0.02*weight;
+  }
+  else if(age >= 2/12 && age <= 4/12){
+    foodAmount=0.1*weight;
+  }
+  else if(age >= 5/12 && age <= 7/12){
+    foodAmount=0.05*weight;
+  }
+  else if (age >= 8/12 && age <= 11/12){
+    foodAmount=0.04*weight;
+  
+  }
+  return foodAmount;
+}
 
 
 
@@ -127,10 +158,24 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
-    /*add your code here*/
-}
-  
+function game(string){
+  let compChoice=Math.floor(Math.random()*3)
+   function computerChoice(compChoice){
+     if(compChoice===0){
+       compChoice='rock';
+   }
+     else if(compChoice===1){
+       compChoice='scissor'
+   }
+     else{compChoice='paper'}
+       return compChoice;
+       
+   }console.log(computerChoice(compChoice))
+
+   //Got as far as spitting out a random rock paper or scissors
+ }
+ 
+ game('string')
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
