@@ -17,7 +17,10 @@ Do the following:
 
    HINT: no function required
 */
-
+let votingAge=18;
+if(votingAge >= 18){
+  console.log(votingAge);
+}
 
 
 /*
@@ -30,7 +33,12 @@ Do the following:
 
    HINT: no function required
 */
+let bird=19;
+let turtle=20;
 
+if(turtle>=18){
+ let bird=22;
+}
 
 
 
