@@ -17,7 +17,7 @@ Do the following:
 
    HINT: no function required
 */
-const votingAge="20";
+const votingAge=20;
 
 if (votingAge >= 18 ){
   console.log(true);
@@ -35,8 +35,13 @@ Do the following:
 
    HINT: no function required
 */
+let seb=28;
+let annie=20;
 
-
+if (annie>25){
+  let seb=33;
+  console.log(seb);
+}
 
 
 /*
@@ -49,7 +54,11 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let partyTime="1999"
+function stringToNumber(str){
+  return Number(str);
+}
+partyTime("1999");
 /*
 Task 1d - Multiply
  
@@ -58,8 +67,10 @@ Do the following:
    2. Receive the numbers in the parameters: a and b
    3. Multiply a and b and return the answer
 */
-
-
+function multiply(a,b){
+  return a*b;
+}
+multiply(2,4);
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Age in Dog years
