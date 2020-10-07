@@ -58,7 +58,7 @@ let partyTime="1999"
 function stringToNumber(str){
   return Number(str);
 }
-partyTime("1999");
+stringToNumber("1999");
 /*
 Task 1d - Multiply
  
@@ -81,10 +81,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+   return age*7;
 }
-
+dogYears(4);
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -114,9 +114,33 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(weight,age){
+  let foodAmount=0;
+  if(age>=12 && weight=5){
+    foodAmount=0.05*weight;
   }
+  else if(age >=12 && (weight>=5 && weight<=10)){
+    foodAmount=0.04*weight;
+  }
+  
+  else if(age>=12 && (weight>=11 && weight <= 15)){
+    foodAmount=0.03*weight;
+  }
+  else if(age>=12 && weight>=16){
+    foodAmount=0.02*weight;
+  }
+  else if(age >= 2/12 && age <= 4/12){
+    foodAmount=0.1*weight;
+  }
+  else if(age >= 5/12 && age <= 7/12){
+    foodAmount=0.05*weight;
+  }
+  else if (age >= 8/12 && age <= 11/12){
+    foodAmount=0.04*weight;
+  
+  }
+  return foodAmount;
+}
 
 
 
