@@ -116,7 +116,7 @@ Use the hungryDog function and feeding requirements below to do the following:
 
 function hungryDog(weight,age){
   let foodAmount=0;
-  if(age>=12 && weight=5){
+  if(age>=12 && weight<=5){
     foodAmount=0.05*weight;
   }
   else if(age >=12 && (weight>=5 && weight<=10)){
@@ -158,10 +158,24 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-function game(/*add your code here*/){
-    /*add your code here*/
-}
-  
+function game(string){
+  let compChoice=Math.floor(Math.random()*3)
+   function computerChoice(compChoice){
+     if(compChoice===0){
+       compChoice='rock';
+   }
+     else if(compChoice===1){
+       compChoice='scissor'
+   }
+     else{compChoice='paper'}
+       return compChoice;
+       
+   }console.log(computerChoice(compChoice))
+
+   //Got as far as spitting out a random rock paper or scissors
+ }
+ 
+ game('string')
   
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
